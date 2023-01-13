@@ -2,12 +2,20 @@ import 'package:bwa_airplane/shared/theme.dart';
 import 'package:flutter/material.dart';
 
 class BookingDetailsItem extends StatelessWidget {
-  const BookingDetailsItem({super.key});
+  final String title;
+  final String valueText;
+  final Color valueColor;
+  const BookingDetailsItem({
+    super.key,
+    required this.title,
+    required this.valueText,
+    required this.valueColor,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 16),
+      margin: const EdgeInsets.only(top: 16),
       child: Row(
         children: [
           Container(
@@ -21,14 +29,15 @@ class BookingDetailsItem extends StatelessWidget {
             ),
           ),
           Text(
-            'Traveler',
+            title,
             style: blackTextStyle,
           ),
-          Spacer(),
+          const Spacer(),
           Text(
-            '2 Person',
+            valueText,
             style: blackTextStyle.copyWith(
               fontWeight: bold,
+              color: valueColor,
             ),
           ),
         ],

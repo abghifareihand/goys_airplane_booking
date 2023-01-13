@@ -15,7 +15,7 @@ class BonusPage extends StatelessWidget {
           defaultMargin,
         ),
         decoration: BoxDecoration(
-          image: DecorationImage(
+          image: const DecorationImage(
             image: AssetImage(
               'assets/image_card.png',
             ),
@@ -24,7 +24,7 @@ class BonusPage extends StatelessWidget {
             BoxShadow(
               color: kPrimaryColor.withOpacity(0.5),
               blurRadius: 50,
-              offset: Offset(0, 10),
+              offset: const Offset(0, 10),
             ),
           ],
         ),
@@ -57,8 +57,8 @@ class BonusPage extends StatelessWidget {
                 Container(
                   width: 24,
                   height: 24,
-                  margin: EdgeInsets.only(right: 6),
-                  decoration: BoxDecoration(
+                  margin: const EdgeInsets.only(right: 6),
+                  decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage(
                         'assets/icon_plane.png',
@@ -75,7 +75,7 @@ class BonusPage extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 41,
             ),
             Text(
@@ -98,7 +98,7 @@ class BonusPage extends StatelessWidget {
 
     Widget title() {
       return Container(
-        margin: EdgeInsets.only(
+        margin: const EdgeInsets.only(
           top: 80,
         ),
         child: Text(
@@ -113,7 +113,7 @@ class BonusPage extends StatelessWidget {
 
     Widget subtitle() {
       return Container(
-        margin: EdgeInsets.only(
+        margin: const EdgeInsets.only(
           top: 10,
         ),
         child: Text(

@@ -107,7 +107,7 @@ class ChooseSeatPage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Container(
+                SizedBox(
                   width: 48,
                   height: 48,
                   child: Center(
@@ -119,7 +119,7 @@ class ChooseSeatPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                Container(
+                SizedBox(
                   width: 48,
                   height: 48,
                   child: Center(
@@ -131,7 +131,7 @@ class ChooseSeatPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                Container(
+                SizedBox(
                   width: 48,
                   height: 48,
                   child: Center(
@@ -143,7 +143,7 @@ class ChooseSeatPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                Container(
+                SizedBox(
                   width: 48,
                   height: 48,
                   child: Center(
@@ -155,7 +155,7 @@ class ChooseSeatPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                Container(
+                SizedBox(
                   width: 48,
                   height: 48,
                   child: Center(
@@ -184,7 +184,7 @@ class ChooseSeatPage extends StatelessWidget {
                   SeatItem(
                     statusSeat: 2,
                   ),
-                  Container(
+                  SizedBox(
                     width: 48,
                     height: 48,
                     child: Center(
@@ -220,7 +220,7 @@ class ChooseSeatPage extends StatelessWidget {
                   SeatItem(
                     statusSeat: 0,
                   ),
-                  Container(
+                  SizedBox(
                     width: 48,
                     height: 48,
                     child: Center(
@@ -256,7 +256,7 @@ class ChooseSeatPage extends StatelessWidget {
                   const SeatItem(
                     statusSeat: 1,
                   ),
-                  Container(
+                  SizedBox(
                     width: 48,
                     height: 48,
                     child: Center(
@@ -292,7 +292,7 @@ class ChooseSeatPage extends StatelessWidget {
                   SeatItem(
                     statusSeat: 2,
                   ),
-                  Container(
+                  SizedBox(
                     width: 48,
                     height: 48,
                     child: Center(
@@ -328,7 +328,7 @@ class ChooseSeatPage extends StatelessWidget {
                   SeatItem(
                     statusSeat: 0,
                   ),
-                  Container(
+                  SizedBox(
                     width: 48,
                     height: 48,
                     child: Center(
