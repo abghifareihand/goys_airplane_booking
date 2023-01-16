@@ -9,9 +9,9 @@ import 'package:intl/intl.dart';
 
 class DetailPage extends StatelessWidget {
   final DestinationModel destination;
-  const DetailPage({
+  const DetailPage(
+    this.destination, {
     super.key,
-    required this.destination,
   });
 
   @override
@@ -270,7 +270,9 @@ class DetailPage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => ChooseSeatPage(),
+                          builder: (context) => ChooseSeatPage(
+                            destination: destination,
+                          ),
                         ),
                       );
                     },

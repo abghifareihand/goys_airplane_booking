@@ -28,7 +28,7 @@ class DestinationCard extends StatelessWidget {
           context,
           MaterialPageRoute(
             builder: (context) => DetailPage(
-              destination: destination,
+              destination,
             ),
           ),
         );
