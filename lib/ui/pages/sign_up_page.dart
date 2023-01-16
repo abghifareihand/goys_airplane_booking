@@ -73,6 +73,13 @@ class _SignUpPageState extends State<SignUpPage> {
         return BlocConsumer<AuthCubit, AuthState>(
           listener: (context, state) {
             if (state is AuthSuccess) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  duration: const Duration(seconds: 1),
+                  content: const Text('Success Register'),
+                  backgroundColor: kGreenColor,
+                ),
+              );
               Navigator.pushNamedAndRemoveUntil(
                   context, '/bonus', (route) => false);
             } else if (state is AuthFailed) {
