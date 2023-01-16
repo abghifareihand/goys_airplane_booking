@@ -7,6 +7,7 @@ class UserModel extends Equatable {
   final String hobby;
   final int balance;
 
+  // ignore: prefer_const_constructors_in_immutables
   UserModel({
     required this.id,
     required this.email,
