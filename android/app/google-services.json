@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1088206617025",
+    "project_id": "goys-airplane-book",
+    "storage_bucket": "goys-airplane-book.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088206617025:android:336840434ea8544f3b5740",
+        "android_client_info": {
+          "package_name": "com.goys.airplane"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088206617025-4jr85e2np94fb7b24hdjc0dqjcqolh8h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDIiMLocut_y1iaaa51lynuxI1Y_6tZV0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088206617025-4jr85e2np94fb7b24hdjc0dqjcqolh8h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
