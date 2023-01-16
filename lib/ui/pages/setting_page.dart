@@ -1,4 +1,5 @@
 import 'package:bwa_airplane/cubit/auth_cubit.dart';
+import 'package:bwa_airplane/cubit/page_cubit.dart';
 import 'package:bwa_airplane/shared/theme.dart';
 import 'package:bwa_airplane/ui/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
@@ -20,14 +21,15 @@ class SettingPage extends StatelessWidget {
           );
         } else if (state is AuthInitial) {
           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              duration: const Duration(seconds: 1),
-              content: const Text('Success Logout'),
-              backgroundColor: kGreenColor,
+            const SnackBar(
+              duration: Duration(seconds: 2),
+              content: Text('Berhasil Logout'),
+              backgroundColor: Colors.red,
             ),
           );
           Navigator.pushNamedAndRemoveUntil(
-              context, '/sign-up', (route) => false);
+              context, '/sign-in', (route) => false);
+          context.read<PageCubit>().setPage(0);
         }
       },
       builder: (context, state) {
