@@ -38,13 +38,13 @@ class CheckoutPage extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      'CGK',
-                      style: blackTextStyle.copyWith(
-                        fontSize: 24,
-                        fontWeight: semiBold,
-                      ),
-                    ),
+                    // Text(
+                    //   'CGK',
+                    //   style: blackTextStyle.copyWith(
+                    //     fontSize: 24,
+                    //     fontWeight: semiBold,
+                    //   ),
+                    // ),
                     Text(
                       'Tangerang',
                       style: greyTextStyle.copyWith(
@@ -56,15 +56,15 @@ class CheckoutPage extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
+                    // Text(
+                    //   'TLC',
+                    //   style: blackTextStyle.copyWith(
+                    //     fontSize: 24,
+                    //     fontWeight: semiBold,
+                    //   ),
+                    // ),
                     Text(
-                      'TLC',
-                      style: blackTextStyle.copyWith(
-                        fontSize: 24,
-                        fontWeight: semiBold,
-                      ),
-                    ),
-                    Text(
-                      'Ciliwung',
+                      transaction.destination.city,
                       style: greyTextStyle.copyWith(
                         fontWeight: light,
                       ),
