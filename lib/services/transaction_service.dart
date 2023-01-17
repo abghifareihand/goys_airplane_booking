@@ -21,16 +21,15 @@ class TransactionService {
     }
   }
 
-  Future<List<TransactionModel>> fecthTransactions() async {
+  Future<List<TransactionModel>> fetchTransactions() async {
     try {
       QuerySnapshot result = await _transactionReference.get();
-      List<TransactionModel> transactions = result.docs
-          .map(
-            (e) => TransactionModel.fromJson(
-                e.id, e.data() as Map<String, dynamic>),
-          )
-          .toList();
-          return transactions;
+      List<TransactionModel> transactions = result.docs.map((e) {
+        return TransactionModel.fromJson(
+            e.id, e.data() as Map<String, dynamic>);
+      }).toList();
+      print('Transactions => $transactions');
+      return transactions;
     } catch (e) {
       rethrow;
     }

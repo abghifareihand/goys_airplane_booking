@@ -5,16 +5,15 @@ class DestinationService {
   final CollectionReference _destinationReference =
       FirebaseFirestore.instance.collection('destinations');
 
-  Future<List<DestinationModel>> fecthDestinations() async {
+  Future<List<DestinationModel>> fetchDestinations() async {
     try {
       QuerySnapshot result = await _destinationReference.get();
-      List<DestinationModel> destinations = result.docs
-          .map(
-            (e) => DestinationModel.fromJson(
-                e.id, e.data() as Map<String, dynamic>),
-          )
-          .toList();
-          return destinations;
+      List<DestinationModel> destinations = result.docs.map((e) {
+        return DestinationModel.fromJson(
+            e.id, e.data() as Map<String, dynamic>);
+      }).toList();
+      //print('Destinations => $destinations');
+      return destinations;
     } catch (e) {
       rethrow;
     }

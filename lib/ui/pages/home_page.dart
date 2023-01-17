@@ -17,7 +17,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   void initState() {
-    context.read<DestinationCubit>().fecthDestinations();
+    context.read<DestinationCubit>().fetchDestinations();
     super.initState();
   }
 
@@ -153,8 +153,10 @@ class _HomePageState extends State<HomePage> {
             ],
           );
         }
-        return const Center(
-          child: CircularProgressIndicator(),
+        return Center(
+          child: CircularProgressIndicator(
+            color: kPrimaryColor,
+          ),
         );
       },
     );

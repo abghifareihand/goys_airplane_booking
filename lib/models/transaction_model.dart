@@ -2,8 +2,8 @@ import 'package:bwa_airplane/models/destination_model.dart';
 import 'package:equatable/equatable.dart';
 
 class TransactionModel extends Equatable {
-  final String id;
   final DestinationModel destination;
+  final String id;
   final int amountTraveler;
   final String selectedSeats;
   final bool insurance;

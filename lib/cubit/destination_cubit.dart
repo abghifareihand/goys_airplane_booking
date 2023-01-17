@@ -8,15 +8,16 @@ part 'destination_state.dart';
 class DestinationCubit extends Cubit<DestinationState> {
   DestinationCubit() : super(DestinationInitial());
 
-  void fecthDestinations() async {
+  void fetchDestinations() async {
     try {
       emit(DestinationLoading());
       List<DestinationModel> destinations =
-          await DestinationService().fecthDestinations();
+          await DestinationService().fetchDestinations();
 
-          emit(DestinationSuccess(destinations));
-    } catch (error) {
-      emit(DestinationFailed(error.toString()));
+      emit(DestinationSuccess(destinations));
+      //print('Fetch destinations $destinations');
+    } catch (e) {
+      emit(DestinationFailed(e.toString()));
     }
   }
 }
